@@ -1,1 +1,1 @@
-# Krisz_Matyi_Miki
+# This is a README for Artificial Inteligence class

@@ -1,0 +1,7 @@
+.env
+.cache/
+.venv/
+__pycache__
+.~lock.WLTP_project_BSFC.xlsx#
+build/
+dist/
