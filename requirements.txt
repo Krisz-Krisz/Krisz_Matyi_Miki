@@ -1,0 +1,5 @@
+# CAN bus protocol wrapper
+python-can==4.3.1
+
+# SAE J1939 protocol stack built on top of python-can
+can-j1939==2.0.5
