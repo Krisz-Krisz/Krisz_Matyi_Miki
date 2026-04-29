@@ -1,5 +1,15 @@
-# CAN bus protocol wrapper
-python-can==4.3.1
+# --- Core Math & Arrays (Everyone) ---
+numpy
 
-# SAE J1939 protocol stack built on top of python-can
-can-j1939==2.0.5
+# --- Control & Optimization (Student 1 - MPC) ---
+scipy
+cvxpy
+
+# --- Visualization & Simulation (Student 3 & Everyone) ---
+matplotlib
+
+# --- Data Logging (For the 20-page report) ---
+pandas
+
+# --- Prototyping (Highly Recommended) ---
+jupyterlab
