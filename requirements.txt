@@ -1,15 +1,15 @@
 # --- Core Math & Arrays (Everyone) ---
-numpy
+numpy>=1.22
 
 # --- Control & Optimization (Student 1 - MPC) ---
-scipy
-cvxpy
+scipy>=1.8
+cvxpy>=1.2
 
 # --- Visualization & Simulation (Student 3 & Everyone) ---
-matplotlib
+matplotlib>=3.5
 
 # --- Data Logging (For the 20-page report) ---
-pandas
+pandas>=1.5
 
-# --- Prototyping (Highly Recommended) ---
-jupyterlab
+# --- Development & Notebook Support ---
+jupyterlab>=3.5
