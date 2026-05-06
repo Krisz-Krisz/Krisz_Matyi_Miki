@@ -15,3 +15,7 @@ simulation_log.csv
 trajectory.png
 trajectory_animation.mp4
 trajectory_animation.gif
+simulation_log.csv
+trajectory.png
+*.png
+*.csv
