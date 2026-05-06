@@ -36,10 +36,13 @@ class GroundTruthVehicle:
         return np.array([x_noisy, y_noisy, v_noisy])
 
 
+"""Define main path"""
+
 def create_reference_path():
     x = np.linspace(0.0, 35.0, 351)
-    y = 1.8 * np.sin(0.2 * x)
+    y = 1.8 * np.cos(0.2 * x)
     return np.column_stack((x, y))
+
 
 
 def find_local_path(reference, current_position, lookahead=15):
@@ -99,11 +102,15 @@ def animate_run(data_frame, reference_path):
 
 
 def main():
-    np.random.seed(42)
+    np.random.seed(67)
     reference = create_reference_path()
     vehicle = GroundTruthVehicle(dt=0.1, wheelbase=2.5)
+    # Set vehicle to start at the beginning of the reference path
+    initial_pos = reference[0]
+    initial_yaw = np.arctan2(reference[1][1] - reference[0][1], reference[1][0] - reference[0][0])  # Direction from first two points
+    vehicle.state = np.array([initial_pos[0], initial_pos[1], 0.0, initial_yaw])
     ekf = KinematicEKF(dt=0.1, wheelbase=2.5)
-    ekf.set_initial_state([0.0, 0.0, 0.0, 0.0])
+    ekf.set_initial_state([initial_pos[0], initial_pos[1], 0.0, initial_yaw])  # Match vehicle start
     mpc = MPCController(horizon=12, dt=0.1, wheelbase=2.5)
 
     records = []

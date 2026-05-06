@@ -5,7 +5,13 @@ __pycache__
 .~lock.WLTP_project_BSFC.xlsx#
 build/
 dist/
-png
-csv
-gif
-mp4
+png/
+csv/
+gif/
+mp4/
+
+# Simulation output files
+simulation_log.csv
+trajectory.png
+trajectory_animation.mp4
+trajectory_animation.gif
