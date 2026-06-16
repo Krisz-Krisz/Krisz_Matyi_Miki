@@ -14,5 +14,10 @@ trajectory_animation.gif
 
 *.png
 *.csv
+<<<<<<< HEAD
 
 SIMULATION_RESULTS/
+=======
+*.gif
+*.mp4
+>>>>>>> 60bf041b21b49d95a63f40b9a7135caf8ff7d6da
