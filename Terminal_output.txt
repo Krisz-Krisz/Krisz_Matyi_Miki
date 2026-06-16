@@ -1,0 +1,62 @@
+
+--- Running simulation: Run 1 / linear (seed=67) ---
+Saved animation as SIMULATION_RESULTS/Run 1/linear/trajectory_animation.mp4 using ffmpeg.
+RMSE [x, y, v] = [0.104 0.148 0.085]
+Average MPC solve time: 0.4804 s
+Steering variance: 0.08162
+
+--- Running simulation: Run 1 / sin (seed=67) ---
+Saved animation as SIMULATION_RESULTS/Run 1/sin/trajectory_animation.mp4 using ffmpeg.
+RMSE [x, y, v] = [0.108 0.144 0.085]
+Average MPC solve time: 0.5661 s
+Steering variance: 0.07979
+
+--- Running simulation: Run 1 / cos (seed=67) ---
+Saved animation as SIMULATION_RESULTS/Run 1/cos/trajectory_animation.mp4 using ffmpeg.
+RMSE [x, y, v] = [0.101 0.152 0.085]
+Average MPC solve time: 0.7234 s
+Steering variance: 0.08280
+
+--- Running simulation: Run 1 / 1_over_x (seed=67) ---
+Saved animation as SIMULATION_RESULTS/Run 1/1_over_x/trajectory_animation.mp4 using ffmpeg.
+RMSE [x, y, v] = [0.098 0.15  0.085]
+Average MPC solve time: 0.6464 s
+Steering variance: 0.08269
+
+--- Running simulation: Run 1 / neg_x_squared (seed=67) ---
+Saved animation as SIMULATION_RESULTS/Run 1/neg_x_squared/trajectory_animation.mp4 using ffmpeg.
+RMSE [x, y, v] = [0.133 0.118 0.085]
+Average MPC solve time: 0.9080 s
+Steering variance: 0.05478
+
+--- Running simulation: Run 2 / linear (seed=42) ---
+Saved animation as SIMULATION_RESULTS/Run 2/linear/trajectory_animation.mp4 using ffmpeg.
+RMSE [x, y, v] = [0.097 0.136 0.087]
+Average MPC solve time: 0.5047 s
+Steering variance: 0.08738
+
+--- Running simulation: Run 2 / sin (seed=42) ---
+Saved animation as SIMULATION_RESULTS/Run 2/sin/trajectory_animation.mp4 using ffmpeg.
+RMSE [x, y, v] = [0.098 0.14  0.087]
+Average MPC solve time: 0.3902 s
+Steering variance: 0.08887
+
+--- Running simulation: Run 2 / cos (seed=42) ---
+Saved animation as SIMULATION_RESULTS/Run 2/cos/trajectory_animation.mp4 using ffmpeg.
+RMSE [x, y, v] = [0.098 0.135 0.087]
+Average MPC solve time: 0.4215 s
+Steering variance: 0.09085
+
+--- Running simulation: Run 2 / 1_over_x (seed=42) ---
+Saved animation as SIMULATION_RESULTS/Run 2/1_over_x/trajectory_animation.mp4 using ffmpeg.
+RMSE [x, y, v] = [0.097 0.138 0.088]
+Average MPC solve time: 0.1002 s
+Steering variance: 0.08864
+
+--- Running simulation: Run 2 / neg_x_squared (seed=42) ---
+Saved animation as SIMULATION_RESULTS/Run 2/neg_x_squared/trajectory_animation.mp4 using ffmpeg.
+RMSE [x, y, v] = [0.127 0.126 0.088]
+Average MPC solve time: 0.1292 s
+Steering variance: 0.05510
+
+✓ All simulations completed. Results saved in SIMULATION_RESULTS/
