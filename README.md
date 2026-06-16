@@ -8,6 +8,74 @@ This repository implements a modular 2D autonomous vehicle path-tracking simulat
 
 Each component has a clearly defined responsibility, and they communicate in a cycle to simulate a realistic perception-control loop under noise.
 
+## Installation
+
+### Windows
+
+1. Create and activate a Python virtual environment in the repository root:
+   ```bash
+   python -m venv .venv
+   .venv\Scripts\activate
+   ```
+2. Upgrade pip and install required packages:
+   ```bash
+   python -m pip install --upgrade pip
+   python -m pip install -r requirements.txt
+   ```
+3. Optional: Install ffmpeg for MP4 animation output (Pillow is used automatically for GIF output if ffmpeg is unavailable):
+   - Download from [ffmpeg.org](https://ffmpeg.org/download.html) and add to PATH, or use Chocolatey: `choco install ffmpeg`
+
+### Debian-based Linux (Ubuntu, Mint, etc.)
+
+1. Create and activate a Python virtual environment in the repository root:
+   ```bash
+   python3 -m venv .venv
+   source .venv/bin/activate
+   ```
+2. Upgrade pip and install required packages:
+   ```bash
+   python -m pip install --upgrade pip
+   python -m pip install -r requirements.txt
+   ```
+3. Optional: Install ffmpeg for MP4 animation output (Pillow is used automatically for GIF output if ffmpeg is unavailable):
+   ```bash
+   sudo apt update && sudo apt install ffmpeg
+   ```
+
+### Arch-based Linux
+
+1. Create and activate a Python virtual environment in the repository root:
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate
+   ```
+2. Upgrade pip and install required packages:
+   ```bash
+   python -m pip install --upgrade pip
+   python -m pip install -r requirements.txt
+   ```
+3. Optional: Install ffmpeg for MP4 animation output (Pillow is used automatically for GIF output if ffmpeg is unavailable):
+   ```bash
+   sudo pacman -S ffmpeg
+   ```
+
+### Fedora-based Linux
+
+1. Create and activate a Python virtual environment in the repository root:
+   ```bash
+   python3 -m venv .venv
+   source .venv/bin/activate
+   ```
+2. Upgrade pip and install required packages:
+   ```bash
+   python -m pip install --upgrade pip
+   python -m pip install -r requirements.txt
+   ```
+3. Optional: Install ffmpeg for MP4 animation output (Pillow is used automatically for GIF output if ffmpeg is unavailable):
+   ```bash
+   sudo dnf install ffmpeg
+   ```
+
 ## Project Overview
 
 The simulation follows this timing chain:
@@ -177,23 +245,6 @@ The Extended Kalman Filter is needed because the motion model is nonlinear due t
 ### Why MPC is used
 
 MPC is valuable because it plans control actions over multiple future steps, allowing the vehicle to anticipate the path shape and avoid jerky corrections. Here, it balances tracking performance with smooth actuator usage.
-
-## Installation
-
-1. Create and activate a Python virtual environment in the repository root:
-   ```bash
-   python3 -m venv .venv
-   source .venv/bin/activate
-   ```
-2. Upgrade pip and install required packages:
-   ```bash
-   python -m pip install --upgrade pip
-   python -m pip install -r requirements.txt
-   ```
-3. Optional: install ffmpeg for MP4 animation output, or Pillow is used automatically for GIF output if ffmpeg is unavailable:
-   ```bash
-   sudo apt-get install ffmpeg
-   ```
 
 ## Usage
 
